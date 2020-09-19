@@ -3,6 +3,9 @@
 Simple \<input /> wrapper to mask the value with a BR zipcode mask. \
 It will apply all the props given to it, to an input field, enabling any customization.
 
+Componente para adicionar máscara de cep sem dependências.
+Os props são copiados diretamente para um `<input />`, permitindo customização.
+
 ![ttystrudio GIF](https://imgur.com/uclg8Ad.gif)
 
 ## Installation

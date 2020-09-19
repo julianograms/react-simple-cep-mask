@@ -1,6 +1,6 @@
 {
   "name": "react-simple-cep-mask",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Simple input mask for brazilian zipcode",
   "author": "Juliano Grams",
   "main": "App.js",
@@ -16,6 +16,10 @@
     "mascara",
     "zipcode"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julianograms/react-simple-cep-mask.git"
+  },
   "resolutions": {
     "styled-components": "^5"
   },
