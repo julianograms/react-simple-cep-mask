@@ -13,6 +13,8 @@ $ yarn add react-simple-cep-mask
 
 ## Example
 
+### Basic Example
+
 ```JSX
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
@@ -22,11 +24,45 @@ const App = () => {
   const [cep, setCep] = useState("");
   return (
     <>
-      <h2>Simple cep mask </h2>
+      <h2>Basic example</h2>
       <br />
+
       <Cep
         value={cep}
-        onChange={ (cep) => setCep(cep) } />
+        onChange={ (cep) => setCep(cep) }
+      />
+
+      <br />
+      <h4>Masked value: {cep}</h4>
+    </>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+```
+
+### With custom props
+
+```JSX
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import Cep from "react-simple-cep-mask";
+
+const App = () => {
+  const [cep, setCep] = useState("");
+  return (
+    <>
+      <h2>With custom props</h2>
+      <br />
+
+      <Cep
+        value={cep}
+        onChange={ (cep) => setCep(cep) }
+        className="someClass"
+        placeholder="Digite seu cep"
+       />
+
       <br />
       <h4>Masked value: {cep}</h4>
     </>
